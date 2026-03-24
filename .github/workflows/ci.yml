@@ -43,7 +43,7 @@ jobs:
       - name: Quellcode auschecken
         uses: actions/checkout@v4
 
-      - name: Deployment durchführen
+      - name: Deployment durchführenn
         run: |
           echo "Starte Deployment..."
           # Beispiel: Deployment-Skripte oder Befehle
