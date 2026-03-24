@@ -1,0 +1,29 @@
+name: Pipeline mit ServiceNow Change Control
+
+on:
+  push:
+    branches:
+      - CICD
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Quellcode auschecken
+        uses: actions/checkout@v4
+      - name: Einfacher Build Schritt
+        run: echo "Build erfolgreich!"
+      - name: Abhängigkeiten installieren
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y curl
+
+      - name: Unit Tests ausführen
+        run: |
+          echo "Starte Unit Tests..."
+          # Hier könnten Befehle wie `npm test` oder `pytest` stehen
+
+      - name: Integrationstests ausführen
+        run: |
+          echo "Starte Integrationstests..."
+          # Hier könnten Befehle für Integrationstests stehen
