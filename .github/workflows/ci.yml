@@ -46,7 +46,7 @@ jobs:
       - name: Deployment durchführen
         run: |
           echo "Starte Deployment..."
-          # Beispiel: Deployment-Skripte oder Befehles
+          # Beispiel: Deployment-Skripte oder Befehle
 
       - name: Ergebnisse hochladen
         uses: actions/upload-artifact@v4
